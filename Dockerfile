@@ -16,14 +16,18 @@ COPY . .
 # Étape 6: Construire l'application
 RUN npm run build
 
-# Étape 7: Utiliser une image Nginx pour servir les fichiers statiques
-FROM nginx:alpine
+# Étape 7: Utiliser une image Caddy pour servir les fichiers statiques
+FROM caddy:2-alpine
 
-# Étape 8: Copier les fichiers construits dans le répertoire Nginx
-COPY --from=builder /app/dist /usr/share/nginx/html
+# Étape 8: Copier les fichiers construits dans le répertoire Caddy
+COPY --from=builder /app/dist /usr/share/caddy
 
-# Étape 9: Exposer le port 80
+# Étape 9: Copier le Caddyfile
+COPY Caddyfile /etc/caddy/Caddyfile
+
+# Étape 10: Exposer les ports HTTP et HTTPS
 EXPOSE 80
+EXPOSE 443
 
-# Étape 10: Démarrer Nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Étape 11: Démarrer Caddy
+CMD ["caddy", "run", "--config", "/etc/caddy/Caddyfile"]
