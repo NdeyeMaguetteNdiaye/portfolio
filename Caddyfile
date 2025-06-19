@@ -1,4 +1,4 @@
-horizondigital.tech {
+www.horizondigital.tech {
     root * /usr/share/caddy
     file_server
     encode gzip
