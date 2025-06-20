@@ -1,0 +1,23 @@
+www.horizondigital.tech {
+    root * /usr/share/caddy
+    file_server
+    encode gzip
+    log {
+        output stdout
+        format console
+    }
+    
+    # Ajoutez ces lignes si vous avez un backend séparé
+    # handle_path /api/* {
+    #     reverse_proxy backend:8000
+    # }
+    
+    # handle_path /ws/* {
+    #     reverse_proxy backend:8000 {
+    #         header_up Host {host}
+    #         header_up X-Real-IP {remote}
+    #         header_up X-Forwarded-For {remote}
+    #         header_up X-Forwarded-Proto {scheme}
+    #     }
+    # }
+}
