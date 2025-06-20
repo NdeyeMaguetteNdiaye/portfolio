@@ -101,6 +101,55 @@ const Portfolio = () => {
       category: 'affiche',
       image: 'anim.mp4',
       description: ''
+    },
+     {
+      id: 14,
+      title: '',
+      category: 'affiche',
+      image: '01.jpeg',
+      description: ''
+    },
+     {
+      id: 15,
+      title: '',
+      category: 'affiche',
+      image: '02.jpeg',
+      description: ''
+    },
+     {
+      id: 16,
+      title: '',
+      category: 'logo',
+      image: '03.jpeg',
+      description: ''
+    },
+     {
+      id: 17,
+      title: '',
+      category: 'affiche',
+      image: '04.jpeg',
+      description: ''
+    },
+     {
+      id: 18,
+      title: '',
+      category: 'logo',
+      image: '05.jpeg',
+      description: ''
+    },
+     {
+      id: 19,
+      title: '',
+      category: 'affiche',
+      image: '06.jpeg',
+      description: ''
+    },
+     {
+      id: 20,
+      title: '',
+      category: 'affiche',
+      image: '07.jpeg',
+      description: ''
     }
   ];
 
