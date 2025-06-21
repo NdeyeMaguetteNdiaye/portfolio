@@ -150,7 +150,106 @@ const Portfolio = () => {
       category: 'affiche',
       image: '07.jpeg',
       description: ''
-    }
+    },
+    {
+      id: 21,
+      title: '',
+      category: 'logo',
+      image: 'l1.jpeg',
+      description: ''
+    },
+     {
+      id: 22,
+      title: '',
+      category: 'logo',
+      image: 'l2.jpeg',
+      description: ''
+    },
+     {
+      id: 23,
+      title: '',
+      category: 'logo',
+      image: 'l3.jpeg',
+      description: ''
+    },
+    
+    {
+      id: 24,
+      title: '',
+      category: 'logo',
+      image: 'l4.jpeg',
+      description: ''
+    },
+    {
+      id: 25,
+      title: '',
+      category: 'logo',
+      image: 'l5.jpeg',
+      description: ''
+    },
+    {
+      id: 26,
+      title: '',
+      category: 'logo',
+      image: 'l6.jpeg',
+      description: ''
+    },
+    {
+      id: 27,
+      title: '',
+      category: 'logo',
+      image: 'l7.jpeg',
+      description: ''
+    },
+    {
+      id: 28,
+      title: '',
+      category: 'affiche',
+      image: 'f1.jpeg',
+      description: ''
+    },
+    {
+      id: 29,
+      title: '',
+      category: 'affiche',
+      image: 'f2.jpeg',
+      description: ''
+    },
+    {
+      id: 30,
+      title: '',
+      category: 'affiche',
+      image: 'f3.jpeg',
+      description: ''
+    },
+    {
+      id: 31,
+      title: '',
+      category: 'affiche',
+      image: 'f4.jpeg',
+      description: ''
+    },
+    {
+      id: 32,
+      title: '',
+      category: 'affiche',
+      image: 'f5.jpeg',
+      description: ''
+    },
+    {
+      id: 33,
+      title: '',
+      category: 'affiche',
+      image: 'f6.jpeg',
+      description: ''
+    },
+      {
+      id: 34,
+      title: '',
+      category: 'affiche',
+      image: 'f7.jpeg',
+      description: ''
+    },
   ];
 
   const filteredProjects = activeCategory === 'all' 
